@@ -36,7 +36,7 @@ export const BookingForm = ({ onAdd }: Props) => {
         id="date"
         type="date"
         label="Date"
-        value={formData.date}
+        value={formData.date ?? ""}
         onChange={(value) => updateField("date", value)}
         onBlur={() => validateField("date")}
         helper="Choose today or any upcoming date."
